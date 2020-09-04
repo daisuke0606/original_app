@@ -10,6 +10,16 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header-block">
+        <div class="header-logo"><a href="/">Shopping</a></div>
+        <ul class="header-btn">
+          <li class="list"><%= link_to "新規登録", "#" %></li>
+          <li class="list"><%= link_to "ログイン", "#" %></li>
+          <li class="list"><%= link_to "ログアウト", "#" %></li>
+        </ul>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
