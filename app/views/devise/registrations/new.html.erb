@@ -1,7 +1,7 @@
 <a class="home" href="/">Shopping</a>
 <h1>新規登録</h1>
 <%= render "devise/shared/error_messages", resource: resource %>
-<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>  
+<%= form_with model: @user, url: user_registration_path, class: 'registration-main-sign', local: true do |f| %>  
   
 
 <div class="form">
@@ -17,16 +17,16 @@
   </div>
 
   <div class="field">
-    <%= f.label :パスワード %>
+    <%= f.label :パスワード（６文字） %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %></em>
+    <em><%#= @minimum_password_length %></em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "password", placeholder:"文字" %>
+    <%= f.password_field :password, autocomplete: "password", placeholder:"パスワードをご入力して下さい" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "password", placeholder:"同じパスワードを入力して下さい" %>
+    <%= f.label :確認パスワード %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "password", placeholder:"同じパスワードをご入力して下さい" %>
   </div>
 
   <div class="field">
@@ -57,4 +57,5 @@
   <div class="actions">
     <%= f.submit "登録" %>
   </div>
+</div>
 <% end %>
