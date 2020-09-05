@@ -1,0 +1,29 @@
+<a class="home" href="/">Shopping</a>
+<h1>ログイン</h1>
+<%= form_with model: @user, url: user_session_path, class: 'registration-main-login', local: true do |f| %>
+
+<div class="form-login">
+  <div class="field">
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"登録時のメールアドレスをご入力ください" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password", placeholder:"登録時のパスワードをご入力ください" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "ログイン" %>
+  </div>
+</div>
+<% end %>
+
+<%#= render "devise/shared/links" %>

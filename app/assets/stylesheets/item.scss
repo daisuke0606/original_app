@@ -124,7 +124,7 @@ a{
 
 .sub-image-link{
   box-sizing: border-box;
-  height: 500px;
+  height: 700px;
   background: rgba(255, 255, 254, 0.733);
   padding-top: 50px;
 }
@@ -138,10 +138,14 @@ a{
   background: linear-gradient(transparent  50%, #eba0b1  50%);
 }
 
+.item-info{
+  display: flex;
+  justify-content: space-around;
+}
+
 .center-image{
   height: 200pxp;
   width: 200px;
-  margin-right:80px;
 }
 
 footer{
