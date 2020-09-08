@@ -70,28 +70,28 @@
           配送料の負担
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:delivery_fee, DeliveryFee.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.collection_select(:delivery_fee_id, DeliveryFee.all, :id, :name, {}, {class:"select-box"}) %>
         <br>
         <br>
         <div class="weight-bold-text">
           発送元の地域
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:prefectures, Prefectures.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.collection_select(:prefectures_id, Prefectures.all, :id, :name, {}, {class:"select-box"}) %>
         <br>
         <br>
         <div class="weight-bold-text">
           発送までの日数
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:shipping_days, ShippingDays.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.collection_select(:shipping_days_id, ShippingDays.all, :id, :name, {}, {class:"select-box"}) %>
         <br>
         <br>
         <div class="weight-bold-text">
           配達業者
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:trader_name, TraderName.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.collection_select(:trader_name_id, TraderName.all, :id, :name, {}, {class:"select-box"}) %>
         <br>
         <br>
         <div class="sell-price">
