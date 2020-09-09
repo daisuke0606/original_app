@@ -10,12 +10,10 @@ class User < ApplicationRecord
        
   with_options presence: true do
     validates :nickname
-    validates :email
-    validates :password
     validates :birth
-    validates :password, format: { with: PASSWORD_REGEX, message: 'には英字と数字の両方を含めて設定してください' }
   end
-       
+
+    validates :password, format: { with: PASSWORD_REGEX, message: 'には英字と数字の両方を含めて設定してください' }
     validates :nickname, length: { maximum: 40 }
 
   with_options presence: true, format: { with: USER_NAME_REGEX, message: '全角文字を使用してください' } do
