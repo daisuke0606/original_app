@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   width: 700px;
-  height: 800px;
+  height: 100%;
   margin: 60px auto 60px;
   border-radius: 10px;
   border: 1px #ddd solid;
@@ -22,11 +22,17 @@
   display: flex;
   justify-content: center;
   width: 700px;
-  height: 400px;
+  height: 100%;
   margin: 60px auto 60px;
   border-radius: 10px;
   border: 1px #ddd solid;
   background-color: rgba(18, 187, 238, 0.719);
+}
+
+.login-flash-message{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
 }
 
 h1{
