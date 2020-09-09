@@ -52,9 +52,9 @@
           </div>
 
           <div class="item-btn">
-              <a class="buy-btn-a" href="#">購入</a>
-              <a class="buy-btn-b" href="#">削除</a>
-              <a class="buy-btn-c" href="#">編集</a>
+              <%= link_to '購入', "#", method: :post, class:'buy-btn-a' %>
+              <%= link_to '削除', item_path(item.id), method: :delete, class:'buy-btn-b' %>
+              <%= link_to '編集', "#", method: :get, class:'buy-btn-c' %>
           </div>
         </div>
         <% end %>
