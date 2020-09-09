@@ -29,6 +29,12 @@
   background-color: rgba(18, 187, 238, 0.719);
 }
 
+.login-flash-message{
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
 h1{
   font-size: 70px;
   text-align: center;

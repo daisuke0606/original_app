@@ -1,8 +1,13 @@
 <a class="home" href="/">Shopping</a>
 <h1>ログイン</h1>
 <%= form_with model: @user, url: user_session_path, class: 'registration-main-login', local: true do |f| %>
-
-<div class="form-login">
+  <div class="form-login">
+    <span class='login-flash-message'>
+      <%= flash[:notice] %>
+      <%= flash[:alert] %>
+    </span>
+  <br>
+  <br>
   <div class="field">
     <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"登録時のメールアドレスをご入力ください" %>
