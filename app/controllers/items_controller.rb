@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+
+  before_action :set_action, only: [:show, :edit]
+
   def index
     @items = Item.all.order('created_at DESC').limit(5)
   end
@@ -36,7 +39,9 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    @item = Item.find(params[:id])
+  end
+
+  def show
   end
 
   private
@@ -54,6 +59,10 @@ class ItemsController < ApplicationController
       :trader_name_id,
       :price
     ).merge(user_id: current_user.id)
+  end
+
+  def set_action
+    @item = Item.find(params[:id])
   end
 
 end
