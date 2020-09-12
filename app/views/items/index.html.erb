@@ -1,20 +1,21 @@
 <%= render "items/header" %>
-
 <div class="container">
   <div class="main">
-
+    <% if flash[:notice] %>
+      <p class="flash"><%= flash[:notice] %></p>
+    <% end %>
     <div class="top-image">
       <%= image_tag 'main1.jpg', class: "main-image" %>
       <p>誰でも簡単に<span>出品</span>・<span>購入</span>できる</p>
     </div>
 
     <div class="main-image-link">
-        <div class="buy">
-          <a class="" href="/items/new">出品</a>
-        </div>
-        <div class="sell">
-          <a class="" href="">購入</a>
-        </div>
+      <div class="buy">
+        <a class="" href="/items/new">出品</a>
+      </div>
+      <div class="sell">
+        <a class="" href="">購入</a>
+      </div>
     </div>
 
     <div class="sub-image-link">
@@ -43,7 +44,7 @@
 
           <div class="item-name">
             <p class="item-down">-商品名-</p>
-            <%= item.name %>
+            <%= link_to item.name, item_path(item.id), method: :get, class:'item-name-title' %>
           </div>
 
           <div class="item-price">
@@ -52,9 +53,14 @@
           </div>
 
           <div class="item-btn">
-              <%= link_to '購入', "#", method: :post, class:'buy-btn-a' %>
-              <%= link_to '削除', item_path(item.id), method: :delete, class:'buy-btn-b' %>
-              <%= link_to '編集', edit_item_path(item.id), method: :get, class:'buy-btn-c' %>
+              <% if user_signed_in? && current_user.id != item.user_id %>
+                <%= link_to '購入', "#", method: :get, class:'buy-btn-a' %>
+              <% end %>
+
+              <% if user_signed_in? && current_user.id == item.user_id %>
+                <%= link_to '削除', item_path(item.id), method: :delete, class:'buy-btn-b' %>
+                <%= link_to '編集', edit_item_path(item.id), method: :get, class:'buy-btn-c' %>
+              <% end %>
           </div>
         </div>
         <% end %>

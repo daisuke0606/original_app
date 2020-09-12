@@ -63,7 +63,8 @@ a{
 
 .top-image p{
   position: absolute;
-  top: 22vh;
+  top: 32vh;
+  /* top: 270px; */
   left: 32%;
   font-weight: bold;
   font-size: 3.5vh;
@@ -77,7 +78,6 @@ a{
 
 .main-image-link{
   height: 500px;
-  padding-top: 40px;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -92,6 +92,7 @@ a{
   border-radius: 200px;
   border: black 10px solid;
   position: relative;
+  margin-top: 100px;
 }
 
 .sell{
@@ -101,6 +102,7 @@ a{
   border-radius: 200px;
   border: black 10px solid;
   position: relative;
+  margin-top: 100px;
 }
 
 .main-image-link a{
@@ -117,12 +119,12 @@ a{
   box-sizing: border-box;
   height: 700px;
   background: rgba(255, 255, 254, 0.733);
-  padding-top: 50px;
 }
 
 .title{
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 10px;
 }
 
 .sub-image-link span{
@@ -139,12 +141,12 @@ a{
   width: 200px;
 }
 
-footer{
+/* footer{
   height:30px;
   background-color: whitesmoke;
   position: absolute;
   bottom: 0;
-}
+} */
 
 .new-product-title {
   border-bottom: double 5px #FFC778;
@@ -158,8 +160,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
-  padding: 10px 0;
+  margin-bottom: 10px;
   border-bottom: dotted 2px black;
 }
 
@@ -199,3 +200,16 @@ footer{
   background: rgb(243, 233, 96);
 }
 
+.item-name-title{
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.flash{
+  height: 50px;
+  background: #f3ab59;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.7;
+}
