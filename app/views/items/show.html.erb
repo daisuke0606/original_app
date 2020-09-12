@@ -1,0 +1,40 @@
+<a class="home" href="/">Shopping</a>
+<div class="container">
+  <div class="details">
+    <div class="left-view">
+      <div class="details-title"><%= @item.name  %></div>
+      <%= image_tag @item.image, class: "details-image" %>
+    </div>
+    <div class="right-view">
+      <div class="details-lists">
+        <ul class="details-list">
+          <li class="details-item"><%= @item.user.nickname %></li>
+          <li class="details-item"><%= @item.category.name %></li>
+          <li class="details-item"><%= @item.status.name %></li>
+          <li class="details-item"><%= @item.delivery_fee.name %></li>
+          <li class="details-item"><%= @item.prefectures.name %></li>
+          <li class="details-item"><%= @item.shipping_days.name %></li>
+          <li class="details-item"><%= @item.trader_name.name %></li>
+        </ul>
+      </div>
+      <div class="details-price">
+        <span class="price">価格&emsp;<span class="price-color"><%= @item.price %></span>円<br>(税込み)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="purchase">
+    <%= link_to '購入画面に進む', "#", class:"purchase-btn"%>
+  </div>
+
+  <div class="details-info">
+    <h1 class="details-info-title">-商品説明-</h1>
+    <div class="info"><%=safe_join(@item.info.split("\n"),tag(:br))%></div>
+    <div class="coment-form">
+      <h2 class="comment-title">ーコメントー</h2>
+      <textarea class="comment-text"></textarea>
+      <button type="submit" class="comment-btn">
+        <span  class="comment-btn-text">コメントする<span>
+      </button>
+    </div>
+  </div>

@@ -6,5 +6,6 @@ class TraderName < ActiveHash::Base
     { id: 3, name: '日本郵便' },
     { id: 4, name: '日本通運' },
     { id: 5, name: 'あかぼう' },
+    { id: 6, name: '未定' }
   ]
 end

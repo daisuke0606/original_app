@@ -1,0 +1,130 @@
+
+.container{
+  background-color: rgb(167, 165, 165);
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.home{
+  position: fixed;
+  z-index: 10;
+  height: 70px;
+  width: 100%;
+  background: white;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+}
+
+.left-view{
+  background: white;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-title{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.details-image{
+  height: 60vh;
+  width: 60vh;
+}
+
+.right-view{
+  background: white;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-list{
+  list-style-type: square;
+  margin-top: 120px;
+}
+
+.details-item{
+  border-bottom: 3px solid gray;
+  margin-bottom: 20px;
+}
+
+.price{
+  margin-top: 200px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.price-color{
+  color: red;
+}
+
+.aaa{
+  height: 100px;
+  background: brown;
+}
+
+.details-info-title{
+  font-size: 60px;
+}
+
+.details-info{
+  text-align: center;
+  background: white;
+  height: 800px;
+  width: 100%;
+}
+
+.info{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 300px;
+}
+
+.comment-title{
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.comment-text{
+  display: block;
+  margin: 0 auto;
+  height: 15vh;
+  width: 30%;
+}
+
+.comment-btn{
+  height: 60px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.comment-btn-text{
+  font-size: 20px;
+}
+
+.purchase{
+  background: rgb(241, 52, 52);
+  font-size: 40px;
+  height: 75px;
+  width: 350px;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.purchase-btn{
+  height: 75px;
+  color: aliceblue;
+}

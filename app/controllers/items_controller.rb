@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     if @item.valid?
       @item.save
-      redirect_to root_path
+      redirect_to root_path, notice: "商品登録が完了しました"
     else
       render 'new'
     end
@@ -23,7 +23,7 @@ class ItemsController < ApplicationController
   def destroy
     item = Item.find(params[:id])
     if item.destroy
-      redirect_to root_path
+      redirect_to root_path, notice: "商品登録の削除が完了しました"
     else
       render "index"
     end
@@ -32,7 +32,7 @@ class ItemsController < ApplicationController
   def update
     @item = Item.find(params[:id])
     if @item.update(item_params)
-      redirect_to root_path
+      redirect_to root_path, notice: "商品登録の編集が完了しました"
     else
       rende "index"
     end
