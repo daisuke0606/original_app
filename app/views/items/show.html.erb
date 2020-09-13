@@ -31,10 +31,15 @@
     <h1 class="details-info-title">-商品説明-</h1>
     <div class="info"><%=safe_join(@item.info.split("\n"),tag(:br))%></div>
     <div class="coment-form">
-      <h2 class="comment-title">ーコメントー</h2>
-      <textarea class="comment-text"></textarea>
-      <button type="submit" class="comment-btn">
-        <span  class="comment-btn-text">コメントする<span>
-      </button>
+    <h2 class="comment-title">ーコメントー</h2>
+    <% if current_user %>
+      <%= form_with(model: [@item, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2", class: "comment-text" %>
+        <%= form.submit"送信", class: "comment-btn" %>
+      <% end%>
+    <% else %>
+      <p>aaa</p>
+    <% end %>
+
     </div>
   </div>

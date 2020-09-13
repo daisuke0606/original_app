@@ -104,13 +104,9 @@
 }
 
 .comment-btn{
-  height: 60px;
-  width: 200px;
   margin-top: 20px;
-}
-
-.comment-btn-text{
-  font-size: 20px;
+  font-size: 30px;
+  background-color: rgb(135, 95, 34);
 }
 
 .purchase{
