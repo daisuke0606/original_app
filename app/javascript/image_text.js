@@ -1,7 +1,7 @@
 $(function () {
   $('img').hover(function() {
-    $(this).next('p').show();
+    $(this).next('.test').show();
   }, function(){
-    $(this).next('p').hide();
+    $(this).next('.test').hide();
   });
 });
