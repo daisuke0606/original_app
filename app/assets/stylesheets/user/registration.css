@@ -69,7 +69,10 @@ input[type="password"] {
 
 input[type="submit"] {
   width: 400px;
-  height: 40px;
+  height: 70px;
+  background-color: rgb(255, 255, 232);
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .input-birth-wrap{
