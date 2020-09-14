@@ -8,13 +8,13 @@
     <div class="right-view">
       <div class="details-lists">
         <ul class="details-list">
-          <li class="details-item"><%= @item.user.nickname %></li>
-          <li class="details-item"><%= @item.category.name %></li>
-          <li class="details-item"><%= @item.status.name %></li>
-          <li class="details-item"><%= @item.delivery_fee.name %></li>
-          <li class="details-item"><%= @item.prefectures.name %></li>
-          <li class="details-item"><%= @item.shipping_days.name %></li>
-          <li class="details-item"><%= @item.trader_name.name %></li>
+          <li class="details-item">出品者:&emsp;<%= @item.user.nickname %></li>
+          <li class="details-item">カテゴリー:&emsp;<%= @item.category.name %></li>
+          <li class="details-item">商品状態:&emsp;<%= @item.status.name %></li>
+          <li class="details-item">発送日数:&emsp;<%= @item.delivery_fee.name %></li>
+          <li class="details-item">発送元:&emsp;<%= @item.prefectures.name %></li>
+          <li class="details-item">発送日数:&emsp;<%= @item.shipping_days.name %></li>
+          <li class="details-item">発送業者:&emsp;<%= @item.trader_name.name %></li>
         </ul>
       </div>
       <div class="details-price">
@@ -45,10 +45,10 @@
         <% @comments.each do |comment| %>
           <div class="comment-pic">
             <div class="comment-pic-name">
-              <%= comment.user.nickname %>
+              ・<%= comment.user.nickname %>:
             </div>
             <div class="comment-pic-text">
-              <%=safe_join(comment.text.split("\n"),tag(:br))%>
+              <%=safe_join(comment.text.split("\n"),tag(:br)) %>
             </div>
           </div>
         <% end %>
