@@ -124,3 +124,26 @@
   height: 75px;
   color: aliceblue;
 }
+
+.non-user{
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+.comments-list{
+  margin: 0 auto;
+}
+
+.comment-pic{
+  display: flex;
+  margin: 0 auto;
+  justify-content: start;
+  width: 30%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.comment-pic-name{
+  margin-right: 10px;
+}
