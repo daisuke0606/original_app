@@ -1,0 +1,108 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+.confirmation{
+  height: 100vh;
+  padding-top: 70px;
+  background-color: white;
+  align-items: center;
+}
+
+.confirmation-title{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.confirmation-view{
+  width: 70vw;
+  /* background-color: cadetblue; */
+  margin: 50px auto 0;
+}
+
+.confirmation-image{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.confirmation-name{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.confirmation-name, .confirmation-img{
+  margin: 0 auto;
+}
+
+.confirmation-price{
+  background-color: rgb(211, 240, 166);
+  font-size: 50px;
+  text-align: center;
+  width: 70vw;
+  margin: 10px auto;
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+}
+
+.transaction-form-wrap{
+  display: flex;
+  /* background-color: rgb(83, 138, 84); */
+  height: 100vh;
+}
+
+.card-information{
+  /* background-color: rgb(242, 204, 247); */
+  height: 100%;
+  width: 50%;
+  border-right: 2px dotted black;
+  text-align: center;
+}
+
+.cord-title{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.input-expiration-date-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.input-expiration-date{
+  height: 50px;
+  width: 10%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.address-information{
+  /* background-color: rgb(151, 177, 199); */
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+.post-color{
+  color: red;
+}
+
+.confirmation-title{
+  margin-bottom: 100px;
+}
+
+.form-group{
+  margin-bottom: 20px;
+}
+
+.form-text{
+  font-weight: bold;
+}
+
+.buy-btn{
+  text-align: center;
+  margin-top: 30px;
+  /* background-color: red; */
+}
