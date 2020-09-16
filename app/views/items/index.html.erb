@@ -70,7 +70,7 @@
 
           <div class="item-btn">
               <% if user_signed_in? && current_user.id != item.user_id %>
-                <%= link_to '購入', "#", method: :get, class:'buy-btn-a' %>
+                <%= link_to '購入', new_item_order_path(item.id), method: :get, class:'buy-btn-a' %>
               <% end %>
 
               <% if user_signed_in? && current_user.id == item.user_id %>
