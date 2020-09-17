@@ -10,7 +10,7 @@
     </div>
     <div class="img-upload">
       <div class="weight-bold-text">
-        出品画像
+        コーディネイト画像
         <span class="indispensable">必須</span>
       </div>
       <div class="click-upload">
@@ -25,10 +25,19 @@
 
     <div class="new-items">
       <div class="weight-bold-text">
-        商品名
+        売りたい商品
         <span class="indispensable">必須</span>
+        <p>※売りたい商品名を記入しよう！</p>
+        <p>例：tops/botoms(商品が２つある場合）</p>
       </div>
-      <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"商品名（必須 10文字まで)", maxlength:"10" %>
+      <%= f.text_field :buy, class:"fashion-text", id:"item-name", placeholder:"商品名（必須 20文字まで)", maxlength:"20" %>
+      <br>
+      <br>
+      <div class="weight-bold-text">
+          商品の状態
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       <br>
       <br>
       <div class="items-explain">
@@ -45,32 +54,57 @@
       <div class="weight-bold-text">商品の詳細</div>
       <div class="form">
         <div class="weight-bold-text">
-          カテゴリー
+          Cap
           <span class="indispensable">必須</span>
         </div>
         <%# <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box"}) %>
-        <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"商品名（必須 10文字まで)", maxlength:"10" %>
+        <%= f.text_field :cap, class:"fashion-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
         <br>
         <br>
         <div class="weight-bold-text">
-          商品の状態
+          Tops
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
+        <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.text_field :tops, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
+        <br>
+        <br>
+        <div class="weight-bold-text">
+          Botoms
+          <span class="indispensable">必須</span>
+        </div>
+        <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.text_field :botoms, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
+        <br>
+        <br>
+        <div class="weight-bold-text">
+          Shose
+          <span class="indispensable">必須</span>
+        </div>
+        <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.text_field :shoes, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
+        <br>
+        <br>
+        <div class="weight-bold-text">
+          Accessories
+          <span class="indispensable">必須</span>
+        </div>
+        <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
+        <%= f.text_field :accessories, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
         <br>
         <br>
       </div>
 
-    <div class="items-detail">
-      <div class="weight-bold-text question-text">
-        <span>配送について</span>
-      </div>
-      <div class="form">
-        <div class="weight-bold-text">
-          配送料の負担
-          <span class="indispensable">必須</span>
+      <div class="items-detail">
+        <div class="weight-bold-text question-text">
+          <span>配送について</span>
         </div>
-        <%= f.collection_select(:delivery_fee_id, DeliveryFee.all, :id, :name, {}, {class:"select-box"}) %>
+        <div class="form">
+          <div class="weight-bold-text">
+            配送料の負担
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.collection_select(:delivery_fee_id, DeliveryFee.all, :id, :name, {}, {class:"select-box"}) %>
         <br>
         <br>
         <div class="weight-bold-text">
@@ -96,12 +130,12 @@
         <br>
         <div class="sell-price">
         <div class="weight-bold-text question-text">
-        <span>販売価格<br>(¥300〜9,999,999)</span>
+        <span>Total Coordination Price<br></span>
       </div>
       <div>
         <div class="price-content">
           <div class="price-text">
-            <span>価格</span>
+            <span></span>
             <span class="indispensable">必須</span>
           </div>
           <span class="sell-yen">¥</span>
