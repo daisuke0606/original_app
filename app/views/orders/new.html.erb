@@ -15,8 +15,8 @@
       ¥<span class="price-color"><%= @item.price %></span>-&emsp;<%= @item.delivery_fee.name %>
   </div>
 
-  <div class="available">
     <%= form_with id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# <%= render 'shared/error_messages', model: @order %> %>
     <div class="card-information">
       <h2 class="confirmation-title">カード情報を入力してください</h2>
       <div class="form-group">
@@ -102,12 +102,13 @@
         <%= f.text_field 'phone', class:"input-default", id:"phone-number", placeholder:"例）09012345678",maxlength:"11"%>
       </div>
     </div>
+    <%# <%= f.submit "購入" ,class:"purchase-click" %> %>
     <% end %>
 
-    <%# <div class="purchase-btn"> %>
-      <%= form_with id: 'charge-form', class: 'buy-btn',local: true do |f| %>
+    <div class="purchase-btn"> %>
+      <%= form_with id: 'charge-form', class: 'buy-btn',local: true do |f| %>%
         <%= f.submit "購入" ,class:"purchase-click" %>
       <% end %>
-    <%# </div> %>
+    </div>
   </div>
 </div>
