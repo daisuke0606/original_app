@@ -30,7 +30,14 @@
         <p>※売りたい商品名を記入しよう！</p>
         <p>例：tops/botoms(商品が２つある場合）</p>
       </div>
-      <%= f.text_field :name, class:"fashion-text", id:"item-name", placeholder:"商品名（必須 20文字まで)", maxlength:"20" %>
+      <%= f.text_field :buy, class:"fashion-text", id:"item-name", placeholder:"商品名（必須 20文字まで)", maxlength:"20" %>
+      <br>
+      <br>
+      <div class="weight-bold-text">
+          商品の状態
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       <br>
       <br>
       <div class="items-explain">
