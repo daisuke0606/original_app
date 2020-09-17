@@ -6,41 +6,42 @@
     <% end %>
     <div class="top-image">
       <%= image_tag 'main1.jpg', class: "main-image" %>
-      <p>誰でも簡単に<span>出品</span>・<span>購入</span>できる</p>
+      <p>誰でも簡単に<span>コーディネイト投稿</span>+<span>売買</span>できる!?</p>
     </div>
 
     <div class="main-image-link">
       <div class="buy">
-        <a class="" href="/items/new">出品</a>
+        <%# <a class="" href="/items/new">投稿</a> %>
+        <%= link_to "投稿", new_item_path, method: :get, class:'hoge' %>
       </div>
       <div class="sell">
-        <%= link_to "購入", orders_path, method: :get, class:'hoge' %>
+        <%= link_to "一覧", orders_path, method: :get, class:'hoge' %>
         <%# <a class="" href="">購入</a> %>
       </div>
     </div>
 
     <div class="sub-image-link">
-      <h1 class="title"><span>身の回りの多くの商品を出品できる</span></h1>
+      <h1 class="title"><span>さぁ！コーディネート投稿してみよう！</span></h1>
       <div class="item-info"> 
         <div class="hover-image">
-          <%= image_tag 'camera.png', class: "center-image" %>
-          <p class="test">値段相場: ???~????<br>人気モデル: #####<br>商品数: 少なめ</p>
+          <%= image_tag 'girl_image.webp', class: "center-image" %>
+          <p class="test">合計金額: ???~????<br>出品商品: ###/$$$<br>商品状態: 新品<br>出品数: 少なめ<br>Cap: ###<br>Tops: ###<br>Botoms: ###<br>Shoes: ###<br>accessories: ###</p>
         </div>
         <div class="hover-image">
-          <%= image_tag 'audio.png', class: "center-image" %>
-          <p class="test">値段相場: ???~????<br>人気モデル: #####<br>商品数: 多め</p>
+          <%= image_tag 'men_image.jpg', class: "center-image" %>
+          <p class="test">合計金額: ???~????<br>出品商品: ###/$$$<br>商品状態: 新品<br>出品数: 少なめ<br>Cap: ###<br>Tops: ###<br>Botoms: ###<br>Shoes: ###<br>accessories: ###</p>
         </div>
         <div class="hover-image">
-          <%= image_tag 'stapler.png', class: "center-image" %>
-          <p class="test">値段相場: ???~????<br>人気モデル: #####<br>商品数: 少なめ</p>
+          <%= image_tag 'girl_image2.jpg', class: "center-image" %>
+          <p class="test">合計金額: ???~????<br>出品商品: ###/$$$<br>商品状態: 新品<br>出品数: 少なめ<br>Cap: ###<br>Tops: ###<br>Botoms: ###<br>Shoes: ###<br>accessories: ###</p>
         </div>
         <div class="hover-image">
-          <%= image_tag 'suts.png', class: "center-image" %>
-          <p class="test">値段相場: ???~????<br>人気ブランド: #####<br>商品数: 少なめ</p>
+          <%= image_tag 'men_image2.jpg', class: "center-image" %>
+          <p class="test">合計金額: ???~????<br>出品商品: ###/$$$<br>商品状態: 新品<br>出品数: 少なめ<br>Cap: ###<br>Tops: ###<br>Botoms: ###<br>Shoes: ###<br>accessories: ###</p>
         </div>
         <div class="hover-image">
-          <%= image_tag 'shose.png', class: "center-image" %>
-          <p class="test">値段相場: ???~????<br>人気ブランド: #####<br>商品数: 少なめ</p>
+          <%= image_tag 'girl_image3.webp', class: "center-image" %>
+          <p class="test">合計金額: ???~????<br>出品商品: ###/$$$<br>商品状態: 新品<br>出品数: 少なめ<br>Cap: ###<br>Tops: ###<br>Botoms: ###<br>Shoes: ###<br>accessories: ###</p>
         </div>
       </div>
     </div>
@@ -60,7 +61,7 @@
 
           <div class="item-name">
             <p class="item-down">-商品名-</p>
-            <%= link_to item.name, item_path(item.id), method: :get, class:'item-name-title' %>
+            <%= link_to item.buy, item_path(item.id), method: :get, class:'item-name-title' %>
           </div>
 
           <div class="item-price">

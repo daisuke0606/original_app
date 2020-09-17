@@ -2,19 +2,24 @@
 <div class="container">
   <div class="details">
     <div class="left-view">
-      <div class="details-title"><%= @item.name  %></div>
+      <div class="details-title"><%= @item.buy  %></div>
       <%= image_tag @item.image, class: "details-image" %>
     </div>
     <div class="right-view">
       <div class="details-lists">
         <ul class="details-list">
           <li class="details-item">出品者:&emsp;<%= @item.user.nickname %></li>
-          <li class="details-item">カテゴリー:&emsp;<%= @item.category.name %></li>
+          <%# <li class="details-item">カテゴリー:&emsp;<%= @item.category.name %></li>
           <li class="details-item">商品状態:&emsp;<%= @item.status.name %></li>
-          <li class="details-item">発送日数:&emsp;<%= @item.delivery_fee.name %></li>
+          <li class="details-item">発送業者:&emsp;<%= @item.trader_name.name %></li>
+          <li class="details-item">発送料金:&emsp;<%= @item.delivery_fee.name %></li>
           <li class="details-item">発送元:&emsp;<%= @item.prefectures.name %></li>
           <li class="details-item">発送日数:&emsp;<%= @item.shipping_days.name %></li>
-          <li class="details-item">発送業者:&emsp;<%= @item.trader_name.name %></li>
+          <li class="details-item">Cap:&emsp;<%= @item.cap %></li>
+          <li class="details-item">Tops:&emsp;<%= @item.tops %></li>
+          <li class="details-item">Botoms:&emsp;<%= @item.botoms %></li>
+          <li class="details-item">Shoes:&emsp;<%= @item.shoes %></li>
+          <li class="details-item">Accessories:&emsp;<%= @item.accessories %></li>
         </ul>
       </div>
       <div class="details-price">

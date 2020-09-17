@@ -65,7 +65,7 @@ a{
   position: absolute;
   top: 32vh;
   /* top: 270px; */
-  left: 32%;
+  left: 20%;
   font-weight: bold;
   font-size: 3.5vh;
 
@@ -137,7 +137,7 @@ a{
 }
 
 .center-image{
-  height: 200px;
+  height: 300px;
   width: 200px;
 }
 
