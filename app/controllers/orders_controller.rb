@@ -6,7 +6,8 @@ class OrdersController < ApplicationController
   end
 
   def new
-    # @order = OrderAddress.new
+    @order = Order.new
+    @order = OrderAddress.new
   end
 
   def create
@@ -15,7 +16,7 @@ class OrdersController < ApplicationController
       @order.save
       redirect_to root_path
     else
-      render 'index'
+      render 'new'
     end
   end
 
@@ -26,7 +27,8 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.permit(:item_id, :post_code, :prefectures_id, :city, :block, :building, :phone, :token).merge(user_id: current_user.id)
+    # params.permit(:item_id, :zip01, :pref01, :add01, :block, :building, :phone, :token).merge(user_id: current_user.id)
+    params.require(:order_address).permit(:zip01, :pref01, :add01, :block, :building, :phone).merge(user_id: current_user.id, item_id: params[:item_id])
   end
 
 

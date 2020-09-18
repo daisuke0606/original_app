@@ -27,8 +27,9 @@
       </div>
     </div>
   </div>
-
-  <div class="purchase"><%= link_to '購入画面に進む', new_item_order_path(@item.id), class:"purchase-btn"%></div>
+  <% if user_signed_in? && current_user.id != @item.user_id %>
+    <div class="purchase"><%= link_to '購入画面に進む', new_item_order_path(@item.id), class:"purchase-btn"%></div>
+  <% end %>
 
   <div class="details-info">
     <h1 class="details-info-title">-商品説明-</h1>
@@ -41,7 +42,7 @@
             <%= form.submit"送信", class: "comment-btn", href: "aaa" %>
           <% end %>
         <% else %>
-          <p class="non-user">※　新規登録またはログインをしてください</p>
+          <p class="non-user">※新規登録またはログインをしてください</p>
         <% end %>
       </div>
       <div class="comments-rist">

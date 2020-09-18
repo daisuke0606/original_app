@@ -1,5 +1,4 @@
 class ItemsController < ApplicationController
-
   before_action :set_action, only: [:show, :edit]
 
   def index

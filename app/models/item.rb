@@ -9,6 +9,7 @@ class Item < ApplicationRecord
   NAME_HARF_NAMBER = /\A[0-9]+\z/.freeze
 
   with_options presence: true do
+    validates :trader_name_id
     validates :status_id
     validates :delivery_fee_id
     validates :prefectures_id
