@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
   before_action :set_item, only: [:new, :create]
+  before_action :user_item, except: :index
+  before_action :re_item, except: :index
 
   def index
     @items = Item.all.order('created_at DESC')
@@ -31,5 +33,18 @@ class OrdersController < ApplicationController
     params.require(:order_address).permit(:zip01, :pref01, :add01, :block, :building, :phone).merge(user_id: current_user.id, item_id: params[:item_id])
   end
 
+  def user_item
+    item = Item.find(params[:item_id])
+      if current_user.id == item.user_id
+        redirect_to root_path
+      end
+  end
+
+  def re_item
+    item = Item.find(params[:item_id])
+      unless item.nil?
+        redirect_to root_path, notice: "この商品は他のユーザーに購入されました。"
+      end
+  end
 
 end
