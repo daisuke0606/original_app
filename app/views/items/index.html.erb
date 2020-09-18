@@ -15,7 +15,7 @@
         <%= link_to "投稿", new_item_path, method: :get, class:'hoge' %>
       </div>
       <div class="sell">
-        <%= link_to "一覧", orders_path, method: :get, class:'hoge' %>
+        <%= link_to "一覧", orders_path(:item_id), method: :get, class:'hoge' %>
         <%# <a class="" href="">購入</a> %>
       </div>
     </div>
