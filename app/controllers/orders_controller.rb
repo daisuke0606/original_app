@@ -42,8 +42,8 @@ class OrdersController < ApplicationController
 
   def re_item
     item = Item.find(params[:item_id])
-      unless item.nil?
-        redirect_to root_path, notice: "この商品は他のユーザーに購入されました。"
+      unless item.order.nil?
+        redirect_to root_path, notice: "この商品は他のユーザーに購入されました"
       end
   end
 

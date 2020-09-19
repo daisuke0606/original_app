@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_action, only: [:show, :edit]
+  # before_action :re_item, except: :index
 
   def index
     @items = Item.all.order('created_at DESC').limit(5)
