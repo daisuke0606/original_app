@@ -38,6 +38,16 @@
   width: 60vh;
 }
 
+.sold-out-show{
+  position: absolute;
+  top: 200px;
+}
+
+.sold-out-image-show{
+  width: 100%;
+  opacity: 0.8;
+}
+
 .right-view{
   background: white;
   height: 100vh;

@@ -57,6 +57,11 @@
 
           <div class="item-img">
             <%= image_tag item.image, class: "product-image" %>
+            <% if item.order != nil %>
+            <div class='sold-out'>
+              <%= image_tag "sold_out.jpg", class: "sold-out-image" %>
+            </div>
+          <% end %>
           </div>
 
           <div class="item-name">
@@ -73,7 +78,6 @@
               <% if user_signed_in? && current_user.id != item.user_id %>
                 <%= link_to '購入', new_item_order_path(item.id), method: :get, class:'buy-btn-a' %>
               <% end %>
-
               <% if user_signed_in? && current_user.id == item.user_id %>
                 <%= link_to '削除', item_path(item.id), method: :delete, class:'buy-btn-b' %>
                 <%= link_to '編集', edit_item_path(item.id), method: :get, class:'buy-btn-c' %>
