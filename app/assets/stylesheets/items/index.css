@@ -176,6 +176,21 @@ a{
   width: 33vh;
 }
 
+.item-img{
+  position: relative;
+}
+
+.sold-out{
+  position: absolute;
+  top: 110px;
+}
+
+.sold-out-image{
+  height: 5vh;
+  width: 100%;
+  opacity: 0.8;
+}
+
 .product-content{
   width: 1000px;
   overflow: scroll;

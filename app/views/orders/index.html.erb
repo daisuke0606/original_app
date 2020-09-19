@@ -13,6 +13,11 @@
 
           <div class="item-img">
             <%= image_tag item.image, class: "product-image" %>
+            <% if item.order != nil %>
+            <div class='sold-out'>
+              <%= image_tag "sold_out.jpg", class: "sold-out-image" %>
+            </div>
+            <% end %>
             <%# .variant(combine_options:{gravity: :center, resize:"200x200", crop:"200x200+0+0"}).processed %>
           </div>
 
