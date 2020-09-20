@@ -15,11 +15,11 @@
       ¥<span class="price-color"><%= @item.price %></span>-&emsp;<%= @item.delivery_fee.name %>
   </div>
 
-  <%= form_with model: @order, id: 'charge-form', url: item_orders_path, class: 'transaction-form-wrap',local: true do |f| %>
-  <%# <%= render 'shared/error_messages', model: @order %>
-  <div class="errors-box">
-      <%= render 'devise/shared/error_messages', model: f.object %>
-  </div>
+  <%= form_with model: @order, url: item_orders_path, id: 'charge-form', class: 'transaction-form-wrap',local: true do |f| %>
+    <%# <%= render 'shared/error_messages', model: @order %>
+    <div class="errors-box">
+      <%= render 'devise/shared/error_messages', model: @order %>
+    </div>
 
     <div class="address-information">
       <h2 class="confirmation-title">発送先情報をを入力してください</h2>
@@ -28,9 +28,9 @@
           <label class="form-text">郵便番号</label>
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_field 'zip01', class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8", onKeyUp:"AjaxZip3.zip2addr(this,'','pref01','addr01');" %>
+        <%= f.text_field 'zip01', class:"input-default", id:"postal-code", placeholder:"例）123-4567" %>
         <%# <input type="text" name="zip01" size="10" maxlength="7" placeholder="例）1234567(ハイフン無しで可)" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');"> %>
-        <p class="post-color">※&emsp;動作しない場合は一度リロードしなおしてください</p>
+        <%# <p class="post-color">※&emsp;動作しない場合は一度リロードしなおしてください</p> %>
       </div>
       <div class="form-group">
         <div class='form-text-wrap'>

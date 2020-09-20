@@ -14,7 +14,9 @@ class OrdersController < ApplicationController
 
   def create
     @order = OrderAddress.new(order_params)
+    # binding.pry
     if @order.valid?
+      pay_item
       @order.save
       redirect_to root_path
     else
@@ -30,7 +32,7 @@ class OrdersController < ApplicationController
 
   def order_params
     # params.permit(:item_id, :zip01, :pref01, :add01, :block, :building, :phone, :token).merge(user_id: current_user.id)
-    params.require(:order_address).permit(:zip01, :pref01, :add01, :block, :building, :phone).merge(user_id: current_user.id, item_id: params[:item_id])
+    params.require(:order_address).permit(:zip01, :pref01, :add01, :block, :building, :phone, :token).merge(user_id: current_user.id, item_id: params[:item_id])
   end
 
   def user_item
@@ -45,6 +47,15 @@ class OrdersController < ApplicationController
       unless item.order.nil?
         redirect_to root_path, notice: "この商品は他のユーザーに購入されました"
       end
+  end
+
+  def pay_item
+    Payjp.api_key = "sk_test_3db54a6573b6b32a74e4733f"
+    Payjp::Charge.create(
+      amount: @item.price,
+      card: order_params[:token],
+      currency:'jpy'
+    )
   end
 
 end

@@ -1,6 +1,6 @@
 class OrderAddress
   include ActiveModel::Model
-  attr_accessor :user_id, :item_id, :zip01, :pref01, :add01, :block, :building, :phone, :order_id
+  attr_accessor :user_id, :item_id, :zip01, :pref01, :add01, :block, :building, :phone, :order_id, :token
 
   NUMBER_DIFFERENT = /\A\d{10,11}\z/
 
@@ -12,7 +12,7 @@ class OrderAddress
     validates :phone, format: { with: NUMBER_DIFFERENT, message: 'is invalid. Include 10-11' }
     validates :user_id
     validates :item_id
-    # validates :token
+    validates :token
   end
 
   def save
