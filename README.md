@@ -134,7 +134,15 @@ pass 6147
 [![Image from Gyazo](https://i.gyazo.com/87b52f6cba037a65a7c1cb105d0a155a.gif)](https://gyazo.com/87b52f6cba037a65a7c1cb105d0a155a)<br>
 
 3.詳細ページからコメント機能の追加<br>
-[![Image from Gyazo](https://i.gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2.gif)](https://gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2)
+[![Image from Gyazo](https://i.gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2.gif)](https://gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2)<br>
+
+# 実装予定の機能
+
+- マイページの実装
+- コメント機能の非同期通信の実装
+- いいね機能を非同期通信で実装
+- googleAPIを取得し、撮影地の情報を追加
+
 # テーブル設計
 
 ## users テーブル
