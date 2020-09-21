@@ -1,3 +1,46 @@
+# アプリケーション名 / original-app-28111
+<br>
+<br>
+
+# アプリケーション概要
+
+- コーディネイトと売買を併せ持ったアプリケーションになります。
+  コンセプトは中年層の方でも手軽に楽しんでいただけるようデザインになっており、
+  コーディネイトを可視化することでイメージが沸くようになっています。
+  決済はクレジットカードでのお支払いになっております。
+  今後はgoogleのAPIを使い、撮影地をわかるような実装の追加していく予定です。
+<br>
+<br>
+
+# herokuのURL
+
+[original-app-28111](https://original-app-28111.herokuapp.com/)
+<br>
+<br>
+
+# テスト用アカウント
+
+```
+ユーザー名 user1
+email user@test.com
+pass tt1111
+```
+```
+ユーザー名 user2
+email user@test2.com
+pass tt2222
+```
+```
+Basic認証
+
+id daisuke
+pass 6147
+```
+
+# 利用方法
+
+
+
 # テーブル設計
 
 ## users テーブル
