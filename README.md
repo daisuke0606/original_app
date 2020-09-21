@@ -131,7 +131,7 @@ pass 6147
 https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24<br>
 
 2.jqueryを使用し、画像にカーソルを合わせるとテキストが表示されます。<br>
-https://github.com/daisuke0606/original_app.wiki.git
+![](https://github.com/daisuke0606/original_app.wiki.gif)
 3.詳細ページからコメント機能の追加<br>
 
 # テーブル設計
