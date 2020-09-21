@@ -40,7 +40,7 @@ pass 6147
 # 利用方法
 
 ### 新規登録について<br>
-![](https://gyazo.com/64fc9812187aa68c59267fd3ba7b86de)<br>
+![](https://gyazo.com/64fc9812187aa68c59267fd3ba7b86de.png)<br>
 1.<br>
 上部ヘッダーの右端にあるボタンから新規登録をお願い致します。<br>
 ※ 下記(テストログイン)にemailとpasswordを用意していますので、そちらからログインして頂く事も可能です。<br>
