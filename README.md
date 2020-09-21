@@ -131,9 +131,10 @@ pass 6147
 [![Image from Gyazo](https://i.gyazo.com/f528226d7ae0889d7a1b2ebb81741a24.gif)](https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24)<br>
 
 2.jqueryを使用し、画像にカーソルを合わせるとテキストが表示されます。<br>
-![](https://github.com/daisuke0606/original_app.wiki.gif)
-3.詳細ページからコメント機能の追加<br>
+[![Image from Gyazo](https://i.gyazo.com/87b52f6cba037a65a7c1cb105d0a155a.gif)](https://gyazo.com/87b52f6cba037a65a7c1cb105d0a155a)<br>
 
+3.詳細ページからコメント機能の追加<br>
+[![Image from Gyazo](https://i.gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2.gif)](https://gyazo.com/7c06d69a3c2eb4cdcfdfa7c4aa97d9e2)
 # テーブル設計
 
 ## users テーブル
