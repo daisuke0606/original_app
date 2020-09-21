@@ -128,7 +128,7 @@ pass 6147
 # 実装した機能についてのGIFと説明
 
 1.jsを使用した金額の計算<br>
-![](https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24.png)
+<iframe width="560" height="315" src="https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24" frameborder="0" allowfullscreen></iframe>
 
 # テーブル設計
 
