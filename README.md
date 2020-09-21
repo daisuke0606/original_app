@@ -128,7 +128,7 @@ pass 6147
 # 実装した機能についてのGIFと説明
 
 1.jsを使用した金額の計算<br>
-https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24<br>
+[![Image from Gyazo](https://i.gyazo.com/f528226d7ae0889d7a1b2ebb81741a24.gif)](https://gyazo.com/f528226d7ae0889d7a1b2ebb81741a24)<br>
 
 2.jqueryを使用し、画像にカーソルを合わせるとテキストが表示されます。<br>
 ![](https://github.com/daisuke0606/original_app.wiki.gif)
