@@ -149,6 +149,21 @@ pass 6147
 
 # ローカルでの動作方法
 
+```
+git clone https://github.com/username/original-app-28111.git
+```
+### 言語・デプロイ・開発環境
+- Ruby On Rails 6.0.0
+- Ruby 2.6.5
+- JQuery
+- mysql2
+- Github
+- AWS
+- Visual Studio Code
+- heroku
+- STRIPE
+
+
 # テーブル設計
 
 ## users テーブル
