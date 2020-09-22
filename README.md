@@ -169,7 +169,6 @@ pass 6147
 - AWS
 - Visual Studio Code
 - heroku
-- STRIPE
 
 
 
