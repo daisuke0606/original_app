@@ -143,6 +143,12 @@ pass 6147
 - いいね機能を非同期通信で実装
 - googleAPIを取得し、撮影地の情報を追加
 
+# データベース設計
+
+[ER図](https://gyazo.com/9e1eb178aba1e049cf860c0ed80d0790)
+
+# ローカルでの動作方法
+
 # テーブル設計
 
 ## users テーブル
@@ -190,15 +196,14 @@ pass 6147
 
 | Column                  | Type      | Options                       |
 | ----------------------- | --------- |------------------------------ |
-| user                    | integer   |null: false, foreign_key: true |
-| item                    | integer   |null: false, foreign_key: true |
-| text                    |references | null: false                   |
+| user                    |references |null: false, foreign_key: true |
+| item                    |references |null: false, foreign_key: true |
+| text                    | integer   | null: false                   |
 
 ### Association
 
 - belongs_to :user
 - belongs_to :item
-- 
 
 ## addresses テーブル
 
