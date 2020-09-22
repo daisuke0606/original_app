@@ -149,7 +149,7 @@ pass 6147
 # ローカルでの動作方法
 
 ```
-% git clone https://github.com/daisuke0606/original-app-28111.git
+% git clone https://github.com/daisuke0606/original-app.git
 % cd original-app-28111
 % bundle install
 % yarn install
