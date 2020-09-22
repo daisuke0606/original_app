@@ -150,7 +150,7 @@ pass 6147
 
 ```
 % git clone https://github.com/daisuke0606/original-app.git
-% cd original-app-28111
+% cd original-app
 % bundle install
 % yarn install
 % rails db:create
