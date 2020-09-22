@@ -125,6 +125,9 @@ pass 6147
 
 # 洗い出した要件
 
+|  優先順位  |        機能        |           目的            ｜            詳細            ｜            ストーリー            ｜ 所用時間 |
+|-----------| ------------------|--------------------------|----------------------------|---------------------------------|---------|
+
 # 実装した機能についてのGIFと説明
 
 1.jsを使用した金額の計算<br>
@@ -150,7 +153,12 @@ pass 6147
 # ローカルでの動作方法
 
 ```
-git clone https://github.com/username/original-app-28111.git
+% git clone https://github.com/daisuke0606/original-app-28111.git
+% cd original-app-28111
+% bundle install
+% yarn install
+% rails db:create
+% rails db:migrate
 ```
 ### 言語・デプロイ・開発環境
 - Ruby On Rails 6.0.0
@@ -162,6 +170,7 @@ git clone https://github.com/username/original-app-28111.git
 - Visual Studio Code
 - heroku
 - STRIPE
+
 
 
 # テーブル設計
