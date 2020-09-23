@@ -63,7 +63,10 @@ class ItemsController < ApplicationController
       :prefectures_id,
       :shipping_days_id,
       :trader_name_id,
-      :price
+      :price,
+      :address_map,
+      # :latitude,
+      # :longitude
     ).merge(user_id: current_user.id)
   end
 

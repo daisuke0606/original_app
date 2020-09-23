@@ -11,14 +11,14 @@
         </div>
         <% end %>
         </div>
+        <p>撮影地</p>
+      <p><%= @item.address_map %></p>
+
+      <div id="map"></div>
       </div>
-      <p>住所</p>
-<p><%= @item.address_map %></p>(住所名表示)
 
-<div id="map"></div>(地図を表示)
-・・・
 
-<style>(地図の大きさ指定)
+<style>
 #map{
   height: 150px;
   width:270px;
@@ -36,7 +36,7 @@
         var transitLayer = new google.maps.TransitLayer();
         transitLayer.setMap(map);
 
-        var contentString = '住所：<%= @litem.address_map %>';
+        var contentString = '住所：<%= @item.address_map %>';
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
