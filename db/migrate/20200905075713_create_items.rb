@@ -14,7 +14,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer    :prefectures_id,   null: false
       t.integer    :shipping_days_i,  null: false
       t.integer    :price,            null: false
-      t.text       :address_map,      null: false
+      t.string     :address_map,      null: false
       t.float      :latitude,         null: false
       t.float      :longitude,        null: false
       t.references :user,             null: false,     foreign_key: true
