@@ -29,6 +29,9 @@ class Item < ApplicationRecord
     validates :trader_name_id
   end
 
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
+
   belongs_to :user
   has_one :order
   has_many :comments, dependent: :destroy
