@@ -48,6 +48,13 @@
         <%= f.text_area :info, class:"items-text", id:"item-info", placeholder:"商品の説明（必須 1,000文字まで）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。" ,rows:"7" ,maxlength:"500" %>
         <br>
         <br>
+        <div class="weight-bold-text">
+        撮影地
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_field :address_map, class:"fashion-text", id:"item-name", placeholder:"撮影地の住所を入力してください。", maxlength:"20" %>
+      <br>
+      <br>
       </div>
     </div>
     <div class="items-detail">

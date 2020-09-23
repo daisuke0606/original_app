@@ -70,6 +70,9 @@ ActiveRecord::Schema.define(version: 2020_09_14_141234) do
     t.integer "prefectures_id", null: false
     t.integer "shipping_days_id", null: false
     t.integer "price", null: false
+    t.text "address_map", null: false
+    t.float "latitude", null: false
+    t.float "longitude", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
