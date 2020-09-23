@@ -34,10 +34,10 @@
       <br>
       <br>
       <div class="weight-bold-text">
-          商品の状態
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+        商品の状態
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       <br>
       <br>
       <div class="items-explain">
@@ -49,6 +49,13 @@
         <br>
         <br>
       </div>
+      <div class="weight-bold-text">
+        撮影地
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_field :map, class:"fashion-text", id:"item-name", placeholder:"撮影地の住所を入力してください。", maxlength:"20" %>
+      <br>
+      <br>
     </div>
     <div class="items-detail">
       <div class="weight-bold-text">商品の詳細</div>
