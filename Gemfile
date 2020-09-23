@@ -63,3 +63,4 @@ end
 gem 'payjp'
 gem "aws-sdk-s3", require: false
 gem 'geocoder'
+gem 'dotenv-rails'
