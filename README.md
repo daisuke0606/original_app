@@ -140,7 +140,7 @@ pass 6147
 - マイページの実装
 - コメント機能の非同期通信の実装
 - いいね機能を非同期通信で実装
-- googleAPIを取得し、撮影地の情報を追加
+- googleAPIを取得し、撮影地の情報を追加(実装済み)
 
 # データベース設計
 
@@ -202,6 +202,9 @@ pass 6147
 | shipping_days_id        | integer   | null: false                   |
 | trader_name_id          | integer   | null: false                   |
 | price                   | integer   | null: false                   |
+| address_map             | string    | null: false                   |
+| latitude                | float     | null: false                   |
+| longitude               | float     | null: false                   |
 | user                    |references | null: false, foreign_key: true|
 
 ### Association
