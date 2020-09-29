@@ -88,3 +88,10 @@
   border-top: dotted 2px black;
   border-bottom: dotted 2px black;
 }
+
+.form-any{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  background-color: rgb(206, 206, 206);
+}

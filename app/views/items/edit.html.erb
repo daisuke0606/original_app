@@ -50,7 +50,7 @@
         <br>
         <div class="weight-bold-text">
         撮影地
-        <span class="indispensable">必須</span>
+        <span class="form-any">任意</span>
       </div>
       <%= f.text_field :address_map, class:"fashion-text", id:"item-name", placeholder:"撮影地の住所を入力してください。", maxlength:"20" %>
       <br>
@@ -62,7 +62,7 @@
       <div class="form">
         <div class="weight-bold-text">
           Cap
-          <span class="indispensable">必須</span>
+          <span class="form-any">任意</span>
         </div>
         <%# <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box"}) %>
         <%= f.text_field :cap, class:"fashion-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
@@ -70,7 +70,7 @@
         <br>
         <div class="weight-bold-text">
           Tops
-          <span class="indispensable">必須</span>
+          <span class="form-any">任意</span>
         </div>
         <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
         <%= f.text_field :tops, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
@@ -78,7 +78,7 @@
         <br>
         <div class="weight-bold-text">
           Botoms
-          <span class="indispensable">必須</span>
+          <span class="form-any">任意</span>
         </div>
         <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
         <%= f.text_field :botoms, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
@@ -86,7 +86,7 @@
         <br>
         <div class="weight-bold-text">
           Shose
-          <span class="indispensable">必須</span>
+          <span class="form-any">任意</span>
         </div>
         <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
         <%= f.text_field :shoes, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
@@ -94,7 +94,7 @@
         <br>
         <div class="weight-bold-text">
           Accessories
-          <span class="indispensable">必須</span>
+          <span class="form-any">任意</span>
         </div>
         <%# <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-box"}) %>
         <%= f.text_field :accessories, class:"items-text", id:"item-name", placeholder:"ブランド名（必須 20文字まで)", maxlength:"20" %>
@@ -137,7 +137,7 @@
         <br>
         <div class="sell-price">
         <div class="weight-bold-text question-text">
-        <span>Total Coordination Price<br></span>
+        <span>Price<br></span>
       </div>
       <div>
         <div class="price-content">
