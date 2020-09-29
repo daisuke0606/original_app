@@ -22,12 +22,12 @@
 
 ```
 ユーザー名 user1
-email user@test.com
+email sample@sample100.com
 pass tt1111
 ```
 ```
 ユーザー名 user2
-email user@test2.com
+email sample@sample200.com
 pass tt2222
 ```
 ```
